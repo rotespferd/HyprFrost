@@ -12,6 +12,10 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y tmux keepassxc htop btop
 
+# install flatpaks
+flatpak install com.vivaldi.Vivaldi
+flatpak install com.todoist.Todoist
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
