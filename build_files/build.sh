@@ -13,8 +13,8 @@ set -ouex pipefail
 dnf5 install -y tmux keepassxc htop btop
 
 # install flatpaks
-flatpak install com.vivaldi.Vivaldi
-flatpak install com.todoist.Todoist
+flatpak install -y com.vivaldi.Vivaldi
+flatpak install -y com.todoist.Todoist
 
 # Use a COPR Example:
 #
