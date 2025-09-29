@@ -30,6 +30,9 @@ dnf5 -y copr disable scottames/ghostty
 # install Vivaldi
 rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub
 dnf5 -y install liberation-fonts-all
+
+[ -e /opt/vivaldi ] && [ ! -d /opt/vivaldi ] && rm -f /opt/vivaldi
+mkdir -p /opt
 dnf5 -y install --repofrompath=vivaldi,https://repo.vivaldi.com/stable/rpm/x86_64/ \
   --repo=vivaldi vivaldi-stable
 
