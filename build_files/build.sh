@@ -28,7 +28,8 @@ dnf5 -y install ghostty
 dnf5 -y copr disable scottames/ghostty
 
 # install Vivaldi
-dnf5 install --repofrompath=vivaldi,https://repo.vivaldi.com/stable/rpm/x86_64/ \
+dnf5 -y install liberation-fonts-all
+dnf5 -y install --repofrompath=vivaldi,https://repo.vivaldi.com/stable/rpm/x86_64/ \
   --repo=vivaldi vivaldi-stable
 
 #### Example for enabling a System Unit File
