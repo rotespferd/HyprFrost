@@ -14,7 +14,6 @@ dnf5 install -y tmux keepassxc htop btop
 
 # install flatpaks
 flatpak install -y com.vivaldi.Vivaldi
-flatpak install -y com.todoist.Todoist
 
 # Use a COPR Example:
 #
