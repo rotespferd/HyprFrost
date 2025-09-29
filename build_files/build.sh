@@ -28,8 +28,8 @@ dnf5 -y install ghostty
 dnf5 -y copr disable scottames/ghostty
 
 # install Vivaldi
-dnf5 -y config-manager --add-repo https://repo.vivaldi.com/stable/vivaldi-fedora.repo
-dnf5 -y install vivaldi-stable
+dnf5 install --repofrompath=vivaldi,https://repo.vivaldi.com/stable/rpm/x86_64/ \
+  --repo=vivaldi vivaldi-stable
 
 #### Example for enabling a System Unit File
 
