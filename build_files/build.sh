@@ -27,6 +27,10 @@ dnf5 -y copr enable pgdev/ghostty
 dnf5 -y install ghostty
 dnf5 -y copr disable pgdev/ghostty
 
+# install Vivaldi
+dnf5 -y config-manager --add-repo https://repo.vivaldi.com/stable/vivaldi-fedora.repo
+dnf5 -y install vivaldi-stable
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
