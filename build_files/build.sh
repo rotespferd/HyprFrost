@@ -28,6 +28,11 @@ dnf5 -y install ghostty
 dnf5 -y copr disable scottames/ghostty
 
 # install Vivaldi
+
+ls -ld /opt
+file /opt
+mount | grep /opt
+
 rpm --import https://repo.vivaldi.com/archive/linux_signing_key.pub
 dnf5 -y install liberation-fonts-all
 
