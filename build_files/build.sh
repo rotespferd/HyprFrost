@@ -13,6 +13,7 @@ set -ouex pipefail
 dnf5 install -y tmux keepassxc htop btop
 
 # install flatpaks
+rm /etc/bazzite/flatpak_manager_version
 echo "app.zen_browser.zen" | tee -a /usr/share/ublue-os/bazzite/flatpak/install
 
 # Use a COPR Example:
